@@ -53,12 +53,14 @@ public class ObjectController : MonoBehaviour
         _startingPosition = transform.parent.localPosition;
         _myRenderer = GetComponent<Renderer>();
         SetMaterial(false);
+        Debug.Log(_startingPosition);
+        Debug.Log(_myRenderer);
     }
 
     /// <summary>
     /// Teleports this instance randomly when triggered by a pointer click.
     /// </summary>
-    public void TeleportRandomly()
+   /* public void TeleportRandomly()
     {
         // Picks a random sibling, activates it and deactivates itself.
         int sibIdx = transform.GetSiblingIndex();
@@ -79,7 +81,7 @@ public class ObjectController : MonoBehaviour
         randomSib.SetActive(true);
         gameObject.SetActive(false);
         SetMaterial(false);
-    }
+    }*/
 
     /// <summary>
     /// This method is called by the Main Camera when it starts gazing at this GameObject.
@@ -101,10 +103,10 @@ public class ObjectController : MonoBehaviour
     /// This method is called by the Main Camera when it is gazing at this GameObject and the screen
     /// is touched.
     /// </summary>
-    public void OnPointerClick()
+    /*public void OnPointerClick()
     {
         TeleportRandomly();
-    }
+    }*/
 
     /// <summary>
     /// Sets this instance's material according to gazedAt status.
@@ -115,6 +117,7 @@ public class ObjectController : MonoBehaviour
     /// </param>
     private void SetMaterial(bool gazedAt)
     {
+        //Debug.Log(gazedAt);
         if (InactiveMaterial != null && GazedAtMaterial != null)
         {
             _myRenderer.material = gazedAt ? GazedAtMaterial : InactiveMaterial;

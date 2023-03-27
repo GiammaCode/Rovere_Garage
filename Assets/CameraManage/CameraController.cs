@@ -36,7 +36,7 @@ public class CameraController : MonoBehaviour
             distances[i] = Vector3.Distance(player.transform.position, cameras[i].transform.position);
         }
        
-        if (distances[0] < 2)
+        if (distances[0] < 1)
         {
             Debug.Log("distance car detected");
             if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
@@ -60,7 +60,7 @@ public class CameraController : MonoBehaviour
                     break;
              } 
         }
-        if (distances[1] < 2)
+        if (distances[1] < 1)
         {
             Debug.Log("distance car detected");
             if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
@@ -85,7 +85,7 @@ public class CameraController : MonoBehaviour
                     break;
             }
         }
-        if (distances[2] < 2)
+        if (distances[2] < 1)
         {
             Debug.Log("distance car detected");
             if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)

@@ -1,0 +1,311 @@
+# Blender MTL File: 'None'
+# Material Count: 26
+
+newmtl 350Z_Brake
+Ns 562.500000
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\350Z Brake Normal.png
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\350Z Break Diffuse.jpg
+map_Ks C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\350Z Break Specular.png
+
+newmtl Badge
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Badge Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Badge AO.png
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Badge Roughness.jpg
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Badge AO.png
+
+newmtl Black
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.015000 0.015000 0.015000
+Ks 0.150000 0.150000 0.150000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -s 0.000000 0.000000 0.000000 C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Plastic010_1K_NormalGL.jpg
+map_Ns -s 0.000000 0.000000 0.000000 C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Plastic010_1K_Roughness.jpg
+
+newmtl Brake_Light
+Ns 722.499990
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 1.000000 1.000000 1.000000
+Ke 1.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Light Diffuse.jpg
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Light Roughness.jpg
+
+newmtl Caliper
+Ns 722.499990
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Caliper.png
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Caliper.png
+
+newmtl Carbon_BMP
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\carbon BMP Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Carbon BMP Diffuse.jpg
+map_Ks C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Carbon BMP Specular.jpg
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Carbon BMP Roughness.jpg
+
+newmtl Glass_Full
+Ns 1000.000000
+Ka 0.200000 0.200000 0.200000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+
+newmtl Grille_1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 1 Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 1 Diffuse.png
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 1 Roughness.jpg
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 1 Diffuse.png
+
+newmtl Grille_3
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 3 Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 3 Diffuse.jpg
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 3 Roughness.jpg
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 3 Diffuse.jpg
+
+newmtl Grille_5
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 5 Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 5 Diffuse.png
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 5 Roughness.jpg
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 5 Diffuse.png
+
+newmtl Grille_6
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.250000 0.500000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 6 Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 6 Diffuse.png
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 6 Roughness.jpg
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Grille 6 Diffuse.png
+
+newmtl Head_Light_Emission
+Ns 0.000000
+Ka 0.200000 0.200000 0.200000
+Kd 1.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Head Light Emis.png
+
+newmtl Interior_Emissive
+Ns 722.499990
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.250000 0.250000 0.250000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Interior Emissive 2.png
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Interior Emissive 2.png
+
+newmtl License_Plate
+Ns 562.500000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Custom License Plate 2.jpg
+
+newmtl Light
+Ns 722.499990
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Light Diffuse.jpg
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Light Roughness.jpg
+
+newmtl New_Project_9
+Ns 489.999983
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\New Project (9).jpg
+
+newmtl Primary_Paint
+Ns 225.625023
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.099899 0.381326
+Ks 0.058333 0.058333 0.058333
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl Rear_Mirror
+Ns 902.499999
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl Red
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.003550 0.003550
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Reflector
+Ns 722.499990
+Ka 0.900000 0.900000 0.900000
+Kd 0.710000 0.710000 0.710000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Reflector.jpg
+
+newmtl Stitches_Steering_ALT_OPC
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.250000 0.500000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Stitches Steering ALT OPC (4) (1).png
+map_d C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Stitches Steering ALT OPC (4) (1).png
+
+newmtl Suede_BMP
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Wheel_1A
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Wheel 1 Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Wheel 1A Diffuse.jpg
+map_Ns C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Wheel 1A Roughness.jpg
+
+newmtl interior_Diffuse
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Interior Diffuse.jpg
+
+newmtl vehicle_generic_black_plastic
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.710000 0.710000 0.710000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl vehicle_generic_tyrewallblack
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Vehicle TyreWall Normal.jpg
+map_Kd C:\\Users\\yusef\\blenderkit_data\\models\\mclaren_765lt_sp_93c405c8-aa68-4f29-b623-6ed334c3477c\\textures_2k\\Vehicle TyreWall Diffuse.jpg

@@ -6,7 +6,7 @@ public class playerMovement : MonoBehaviour
 {
     public CharacterController controller;
     public CharacterController characterController;
-    //public AudioSource footstepsSound;
+    public AudioSource footstepsSound;
     public float speed = 2f;
     public float gravity = -9.181f;
     public float Gravity = 9.8f;
@@ -40,13 +40,13 @@ public class playerMovement : MonoBehaviour
         {
             characterController.Move(new Vector3(0, velocity, 0));
         }
-       /* if (x != 0 || y != 0)
+       if (x != 0 || y != 0)
         {
             footstepsSound.enabled = true;
         }
         else
         {
             footstepsSound.enabled = false;
-        }*/
+        }
     }
 }

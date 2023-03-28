@@ -15,19 +15,29 @@ public class JoystickManager : MonoBehaviour
     {
         if (Input.GetAxis("Fire1") == 1)
         {
+            Debug.Log(Input.GetAxis("Fire1"));
+
             Debug.Log("Button0: fire1");
         }
         if (Input.GetAxis("Fire2") == 1)
         {
+            Debug.Log(Input.GetAxis("Fire2"));
+
             Debug.Log("Button1: fire2");
         }
         if (Input.GetAxis("Submit") == 1)
         {
+            Debug.Log(Input.GetAxis("Submit"));
+
             Debug.Log("Button2: submit");
         }
         if (Input.GetAxis("Jump") == 1)
         {
+            Debug.Log(Input.GetAxis("Jump"));
+
             Debug.Log("Button3: jump");
         }
+       
+
     }
 }

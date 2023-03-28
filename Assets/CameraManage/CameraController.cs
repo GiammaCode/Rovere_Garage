@@ -64,7 +64,7 @@ public class CameraController : MonoBehaviour
                 settingCamera(CamNumber, cameras, CameraPlayer, i);
             }
             i++;
-            Debug.Log(inputTimer);
+            
         }
     }
 

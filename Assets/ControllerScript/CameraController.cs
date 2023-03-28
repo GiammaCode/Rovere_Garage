@@ -53,7 +53,7 @@ public class CameraController : MonoBehaviour
             
             if (distances[i] < 1)
             {
-                Debug.Log("distance car detected");
+                //Debug.Log("distance car detected");
                 if ((Input.GetKeyDown("f") || Input.GetAxis("Submit") == 1) && inputTimer == 0)
                 {
                     CamNumber += 1;

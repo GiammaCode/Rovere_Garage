@@ -26,7 +26,7 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(Input.GetAxis("ButtonX"));
+        Debug.Log(Input.GetAxis("ButtonX"));
         CameraPlayer.SetActive(true);
         foreach (GameObject camera in cameras)
         {

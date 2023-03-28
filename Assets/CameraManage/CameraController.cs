@@ -37,151 +37,43 @@ public class CameraController : MonoBehaviour
         foreach(float dist in distances)
         {
             distances[i] = Vector3.Distance(player.transform.position, cameras[i].transform.position);
+            
+            if (distances[i] < 1)
+            {
+                Debug.Log("distance car detected");
+                if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
+                {
+                    CamNumber += 1;
+                    if (CamNumber == 3)
+                    {
+                        CamNumber = 1;
+                    }
+                }
+                settingCamera(CamNumber, cameras, CameraPlayer, i);
+            }
             i++;
         }
-       
-        if (distances[0] < 1)
-        {
-            Debug.Log("distance car detected");
-            if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
-            {
-                CamNumber += 1;
-                if(CamNumber == 3){
-                    CamNumber = 1;
-                }
-            }
-             switch (CamNumber)
-             {
-                 case 1:
-                    CameraPlayer.SetActive(true);
-                    foreach (GameObject camera in cameras)
-                    {
-                        camera.SetActive(false);
-                    }
-                    break;
-                 case 2:
-                    CameraPlayer.SetActive(false);
-                    cameras[0].SetActive(true);
-                    cameras[1].SetActive(false);
-                    break;
-             } 
-        }
-        if (distances[1] < 1)
-        {
-            Debug.Log("distance car detected");
-            if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
-            {
-                CamNumber += 1;
-                if (CamNumber == 3)
-                {
-                    CamNumber = 1;
-                }
-            }
-            switch (CamNumber)
-            {
-                case 1:
-                    CameraPlayer.SetActive(true);
-                    foreach (GameObject camera in cameras)
-                    {
-                        camera.SetActive(false);
-                    }
-                    break;
-                case 2:
-                    CameraPlayer.SetActive(false);
-                    cameras[0].SetActive(false);
-                    cameras[1].SetActive(true);
-                    break;
-            }
-        }
-        if (distances[2] < 1)
-        {
-            Debug.Log("distance car detected");
-            if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
-            {
-                CamNumber += 1;
-                if (CamNumber == 3)
-                {
-                    CamNumber = 1;
-                }
-            }
-            switch (CamNumber)
-            {
-                case 1:
-                    CameraPlayer.SetActive(true);
-                    foreach (GameObject camera in cameras)
-                    {
-                        camera.SetActive(false);
-                    }
-                    break;
-                case 2:
-                    CameraPlayer.SetActive(false);
-                    cameras[0].SetActive(false);
-                    cameras[1].SetActive(false);
-                    cameras[2].SetActive(true);
-                    break;
-            }
-        }
-        if (distances[3] < 1)
-        {
-            Debug.Log("distance car detected");
-            if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
-            {
-                CamNumber += 1;
-                if (CamNumber == 3)
-                {
-                    CamNumber = 1;
-                }
-            }
-            switch (CamNumber)
-            {
-                case 1:
-                    CameraPlayer.SetActive(true);
-                    foreach (GameObject camera in cameras)
-                    {
-                        camera.SetActive(false);
-                    }
-                    break;
-                case 2:
-                    CameraPlayer.SetActive(false);
-                    cameras[0].SetActive(false);
-                    cameras[1].SetActive(false);
-                    cameras[2].SetActive(false);
-                    cameras[3].SetActive(true);
-                    cameras[4].SetActive(false);
-                    break;
-            }
-        }
-        if (distances[4] < 1)
-        {
-            Debug.Log("distance car detected");
-            if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
-            {
-                CamNumber += 1;
-                if (CamNumber == 3)
-                {
-                    CamNumber = 1;
-                }
-            }
-            switch (CamNumber)
-            {
-                case 1:
-                    CameraPlayer.SetActive(true);
-                    foreach (GameObject camera in cameras)
-                    {
-                        camera.SetActive(false);
-                    }
-                    break;
-                case 2:
-                    CameraPlayer.SetActive(false);
-                    cameras[0].SetActive(false);
-                    cameras[1].SetActive(false);
-                    cameras[2].SetActive(false);
-                    cameras[3].SetActive(false);
-                    cameras[4].SetActive(true);
-                    break;
-            }
-        }
+    }
 
+    public void settingCamera(int camN, GameObject[] cameraVector, GameObject mainCam, int index )
+    {
+        if(camN == 1)
+        {
+            mainCam.SetActive(true);
+            foreach (GameObject camera in cameraVector)
+            {
+                camera.SetActive(false);
+            }
+        }
+        else
+        {
+            mainCam.SetActive(true);
+            foreach (GameObject camera in cameraVector)
+            {
+                camera.SetActive(false);
+            }
+            cameraVector[index].SetActive(true);
+        }
 
     }
    

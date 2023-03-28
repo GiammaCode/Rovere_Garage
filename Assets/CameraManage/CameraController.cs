@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
- 
+    const int ELEMENTS = 8;
     public GameObject CameraPlayer;  
     public GameObject player;
 
     
-    public GameObject[] cameras = new GameObject[5]; 
-    public float[] distances = new float[5];
+    public GameObject[] cameras = new GameObject[ELEMENTS]; 
+    public float[] distances = new float[ELEMENTS];
 
     public int CamNumber = 1;
 
@@ -44,10 +44,8 @@ public class CameraController : MonoBehaviour
                 if (Input.GetKeyDown("f") || Input.GetAxis("ButtonX") == 1)
                 {
                     CamNumber += 1;
-                    if (CamNumber == 3)
-                    {
-                        CamNumber = 1;
-                    }
+                    CamNumber = CamNumber == 3 ? 1 : CamNumber;
+                    
                 }
                 settingCamera(CamNumber, cameras, CameraPlayer, i);
             }

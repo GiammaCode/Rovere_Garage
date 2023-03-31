@@ -9,7 +9,10 @@ public class MainCarController : MonoBehaviour
     public Material colorCar;
     public float distance; 
     public int indexColor;
-    
+
+    public float inputTimer;
+    public float time = 0.5f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +27,22 @@ public class MainCarController : MonoBehaviour
        distance = Vector3.Distance(playerBody.transform.position, car.transform.position);
 
         car.transform.Rotate(new Vector3(0f, 0.3f, 0f));
-
-        if(distance < 2.5)
+        //timer condition
+        if (inputTimer > 0)
         {
-            if (Input.GetKeyDown("z"))
+            inputTimer -= Time.deltaTime;
+        }
+
+        if (inputTimer < 0)
+        {
+            inputTimer = 0;
+        }
+
+        if (distance < 2.5)
+        {
+            if ((Input.GetKeyDown("z") || Input.GetAxis("Fire2") == 1) && inputTimer == 0)
             {
+                inputTimer = time;
                 indexColor = setIndexColor(indexColor);
             }
 

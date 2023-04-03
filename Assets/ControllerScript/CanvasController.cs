@@ -19,14 +19,15 @@ public class CanvasController : MonoBehaviour
     public TMP_Text labelInteractionCar;
     public TMP_Text labelInfoCar;
     public TMP_Text labelMainCar;
-
+    public ItemContainer ic;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ic = ItemContainer.Load("Cars");
+
     }
 
     // Update is called once per frame
@@ -38,8 +39,9 @@ public class CanvasController : MonoBehaviour
         //Debug.Log(labelInteractionCar);
 
         labelInteractionCar.enabled = checkInteractionCar(playerBody, cars, carDistances);
-      
-        labelInfoCar.enabled = checkInfoColumn(playerBody, infoColumns, colDistances);
+
+        setInfoLabel(labelInfoCar, playerBody, infoColumns, colDistances, ic);
+        //labelInfoCar.enabled = checkInfoColumn(playerBody, infoColumns, colDistances);
 
         labelMainCar.enabled = checkMainCar(playerBody, mainCar, mainCarDistance);
 
@@ -71,6 +73,32 @@ public class CanvasController : MonoBehaviour
             return false;
         }
     }
+    public void setInfoLabel(TMP_Text label, GameObject pBody, GameObject[] columns, float[] dist, ItemContainer ic)
+    {
+        int i = 0;
+        int colDetected = 0;
+        var index = 0;
+        foreach (GameObject col in columns)
+        {
+            dist[i] = Vector3.Distance(pBody.transform.position, columns[i].transform.position);
+            if (dist[i] < 1 && (Input.GetKey("g") || Input.GetAxis("Fire1") == 1))
+            {
+                colDetected += 1;
+                index = i;
+            }
+            i++;
+        }
+        if (colDetected > 0)
+        {
+            label.enabled = true;
+            label.text = "model:" + ic.cars[index].model + "power" + ic.cars[index].power + "price" + ic.cars[index].price + "traction" + ic.cars[index].traction;
+        }
+        else
+        {
+            label.enabled = false;
+        }
+    }
+
     public bool checkInfoColumn(GameObject pBody, GameObject[] columns, float[] dist)
     {
         int i = 0;

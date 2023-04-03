@@ -2,52 +2,52 @@
 <CarsCollection>
 	<Cars>
 		<Car name="car1">
-			<Model>Ferrari</Model>
-			<Power>430 HP</Power>
-			<Price>350.000$</Price>
-			<Traction>rear</Traction>
+			<Model>Ferrari J50</Model>
+			<Power>690 HP</Power>
+			<Price>2.5mln $</Price>
+			<Traction>Rear</Traction>
 		</Car>
 		<Car name="car2">
-			<Model></Model>
-			<Power></Power>
-			<Price></Price>
-			<Traction></Traction>
+			<Model>McLaren 720s </Model>
+			<Power>710 HP</Power>
+			<Price>300.000 $</Price>
+			<Traction>Rear</Traction>
 		</Car>
 		<Car name="car3">
-			<Model></Model>
-			<Power></Power>
-			<Price></Price>
-			<Traction></Traction>
+			<Model>Ferrari 812 Superfast</Model>
+			<Power>799 HP</Power>
+			<Price>275.000 $</Price>
+			<Traction>Rear</Traction>
 		</Car>
 		<Car name="car4">
-			<Model></Model>
-			<Power></Power>
-			<Price></Price>
-			<Traction></Traction>
+			<Model>Ferrari LaFerrari</Model>
+			<Power>960 HP</Power>
+			<Price>2.5mln $</Price>
+			<Traction>Rear</Traction>
 		</Car>
 		<Car name="car5">
-			<Model></Model>
-			<Power></Power>
-			<Price></Price>
-			<Traction></Traction>
+			<Model>BMW M3 E30</Model>
+			<Power>210 HP</Power>
+			<Price>110.000 $</Price>
+			<Traction>Integral</Traction>
 		</Car>
 		<Car name="car6">
-			<Model></Model>
-			<Power></Power>
-			<Price></Price>
-			<Traction></Traction>
+			<Model>Lamborghini Aventador</Model>
+			<Power>770 HP</Power>
+			<Price>430.000 $</Price>
+			<Traction>Rear</Traction>
 		</Car>
 		<Car name="car7">
-			<Model></Model>
-			<Power></Power>
-			<Price></Price>
-			<Traction></Traction>
+			<Model>Audi R8 GT3</Model>
+			<Power>620 HP</Power>
+			<Price>295.000 $</Price>
+			<Traction>Rear</Traction>
 		</Car>
 		<Car name="car8">
-			<Model></Model>
-			<Power></Power>
-			<Price></Price>
-			<Traction></Traction>
+			<Model>Maserati quattroporte</Model>
+			<Power>400 HP</Power>
+			<Price>152.000 $</Price>
+			<Traction>rear</Traction>
 		</Car>
 		
 	</Cars>

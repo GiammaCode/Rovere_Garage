@@ -11,7 +11,7 @@ public class MainCarController : MonoBehaviour
     public int indexColor;
 
     public float inputTimer;
-    public float time = 0.5f;
+    public float time = 0.1f;
 
 
     // Start is called before the first frame update

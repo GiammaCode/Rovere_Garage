@@ -12,7 +12,7 @@ public class CanvasController : MonoBehaviour
     public GameObject mainCar;
     public GameObject playerBody;
     public Canvas canvas;
-    public float[] distances = new float[ELEMENTS];
+    public float[] carDistances = new float[ELEMENTS];
     public float[] colDistances = new float[ELEMENTS];
     public float mainCarDistance;
     public int carDetected;
@@ -33,28 +33,12 @@ public class CanvasController : MonoBehaviour
     void Update()
     {
         labelInteractionCar.enabled = false;
-        labelInfoCar.enabled = false;   
+        labelInfoCar.enabled = false;
+        labelMainCar.enabled = false;
         //Debug.Log(labelInteractionCar);
-        int i = 0;
-        carDetected = 0;
-        foreach(GameObject car in cars)
-        {
-            distances[i] = Vector3.Distance(playerBody.transform.position, cars[i].transform.position);
-            if (distances[i] < 1.5)
-            {
-                carDetected += 1;
-            }
-            i++;
-        }
-        if(carDetected > 0)
-        {
-            labelInteractionCar.enabled = true;
-        }
-        else
-        {
-            labelInteractionCar.enabled = false;
-        }
 
+        labelInteractionCar.enabled = checkInteractionCar(playerBody, cars, carDistances);
+      
         labelInfoCar.enabled = checkInfoColumn(playerBody, infoColumns, colDistances);
 
         labelMainCar.enabled = checkMainCar(playerBody, mainCar, mainCarDistance);
@@ -65,6 +49,28 @@ public class CanvasController : MonoBehaviour
 
     }
 
+    public bool checkInteractionCar(GameObject pBody, GameObject[] cars, float[] dist)
+    {
+        int i = 0;
+        int carDetected = 0;
+        foreach (GameObject car in cars)
+        {
+            dist[i] = Vector3.Distance(pBody.transform.position, cars[i].transform.position);
+            if (dist[i] < 1.2)
+            {
+                carDetected += 1;
+            }
+            i++;
+        }
+        if (carDetected > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     public bool checkInfoColumn(GameObject pBody, GameObject[] columns, float[] dist)
     {
         int i = 0;
@@ -92,7 +98,7 @@ public class CanvasController : MonoBehaviour
     {
         
         dist = Vector3.Distance(pBody.transform.position, car.transform.position);
-        if (dist < 1)
+        if (dist < 2.5)
         {
             return true;
         }

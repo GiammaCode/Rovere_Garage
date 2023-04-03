@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public GameObject CameraPlayer;  
     public GameObject player;
     public float inputTimer;
-    public float time = 0.5f;
+    public float time = 0.1f;
 
 
 
@@ -51,7 +51,7 @@ public class CameraController : MonoBehaviour
         {
             distances[i] = Vector3.Distance(player.transform.position, cameras[i].transform.position);
             
-            if (distances[i] < 1)
+            if (distances[i] < 1.2)
             {
                 //Debug.Log("distance car detected");
                 if ((Input.GetKeyDown("f") || Input.GetAxis("Submit") == 1) && inputTimer == 0)

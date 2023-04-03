@@ -19,12 +19,8 @@ public class ItemContainer {
         TextAsset _xml = Resources.Load<TextAsset>(path);
         XmlSerializer serializer = new XmlSerializer(typeof(ItemContainer));
         StringReader reader = new StringReader(_xml.text);
-        Debug.Log("c1");
         ItemContainer cars = serializer.Deserialize(reader) as ItemContainer;
-        Debug.Log("c2");
-
-     
-
+          
         reader.Close();
         return cars;
     }

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CarsCollection>
+	<Cars>
+		<Car name="car1">
+			<Model>Ferrari</Model>
+			<Power>430 HP</Power>
+			<Price>350.000$</Price>
+			<Traction>rear</Traction>
+		</Car>
+		<Car name="car2">
+			<Model></Model>
+			<Power></Power>
+			<Price></Price>
+			<Traction></Traction>
+		</Car>
+		<Car name="car3">
+			<Model></Model>
+			<Power></Power>
+			<Price></Price>
+			<Traction></Traction>
+		</Car>
+		<Car name="car4">
+			<Model></Model>
+			<Power></Power>
+			<Price></Price>
+			<Traction></Traction>
+		</Car>
+		<Car name="car5">
+			<Model></Model>
+			<Power></Power>
+			<Price></Price>
+			<Traction></Traction>
+		</Car>
+		<Car name="car6">
+			<Model></Model>
+			<Power></Power>
+			<Price></Price>
+			<Traction></Traction>
+		</Car>
+		<Car name="car7">
+			<Model></Model>
+			<Power></Power>
+			<Price></Price>
+			<Traction></Traction>
+		</Car>
+		<Car name="car8">
+			<Model></Model>
+			<Power></Power>
+			<Price></Price>
+			<Traction></Traction>
+		</Car>
+		
+	</Cars>
+</CarsCollection>

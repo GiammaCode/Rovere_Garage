@@ -4,14 +4,14 @@ using UnityEngine;
 using System.Xml.Serialization;
 using System.IO;
 
-[XmlRoot("ItemCollection")]
+[XmlRoot("CarsCollection")]
   
 public class ItemContainer {
 
-    [XmlArray("Items")]
-    [XmlArrayItem("Item")]
+    [XmlArray("Cars")]
+    [XmlArrayItem("Car")]
 
-    public List<Item> items = new List<Item>();
+    public List<Car> cars = new List<Car>();
     
     public static ItemContainer Load(string path)
     {
@@ -20,12 +20,12 @@ public class ItemContainer {
         XmlSerializer serializer = new XmlSerializer(typeof(ItemContainer));
         StringReader reader = new StringReader(_xml.text);
         Debug.Log("c1");
-        ItemContainer items = serializer.Deserialize(reader) as ItemContainer;
+        ItemContainer cars = serializer.Deserialize(reader) as ItemContainer;
         Debug.Log("c2");
 
      
 
         reader.Close();
-        return items;
+        return cars;
     }
 }

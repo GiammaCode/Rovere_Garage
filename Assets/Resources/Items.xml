@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<ItemCollection>
-	<Items>
-		<Item name="name1">
-			<Damage>50</Damage>
-			<Durability>100</Durability>
-		</Item>
-	</Items>
-</ItemCollection>

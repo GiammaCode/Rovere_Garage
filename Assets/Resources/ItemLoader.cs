@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemLoader : MonoBehaviour
 {
-    public const string path = "Items";
+    public const string path = "Cars";
    
 
     // Start is called before the first frame update
@@ -12,9 +12,15 @@ public class ItemLoader : MonoBehaviour
     {
 
         ItemContainer ic = ItemContainer.Load(path);
-        foreach(Item item in ic.items)
+        foreach(Car car in ic.cars)
         {
-            print(item.name);
+            print(car.name);
+            print(car.model);
+            print(car.power);
+            print(car.price);
+            print(car.traction);
+            print("//////////////////////");
+
         }
     }
 

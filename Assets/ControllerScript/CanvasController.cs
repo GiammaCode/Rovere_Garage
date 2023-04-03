@@ -9,13 +9,16 @@ public class CanvasController : MonoBehaviour
     const int ELEMENTS = 8;
     public GameObject[] cars = new GameObject[ELEMENTS];
     public GameObject[] infoColumns = new GameObject[ELEMENTS];
+    public GameObject mainCar;
     public GameObject playerBody;
     public Canvas canvas;
     public float[] distances = new float[ELEMENTS];
     public float[] colDistances = new float[ELEMENTS];
+    public float mainCarDistance;
     public int carDetected;
     public TMP_Text labelInteractionCar;
     public TMP_Text labelInfoCar;
+    public TMP_Text labelMainCar;
 
 
 
@@ -53,7 +56,10 @@ public class CanvasController : MonoBehaviour
         }
 
         labelInfoCar.enabled = checkInfoColumn(playerBody, infoColumns, colDistances);
-        
+
+        labelMainCar.enabled = checkMainCar(playerBody, mainCar, mainCarDistance);
+
+
 
 
 
@@ -81,4 +87,19 @@ public class CanvasController : MonoBehaviour
             return false; 
         }
     }
+
+    public bool checkMainCar(GameObject pBody, GameObject car, float dist)
+    {
+        
+        dist = Vector3.Distance(pBody.transform.position, car.transform.position);
+        if (dist < 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }

@@ -91,7 +91,10 @@ public class CanvasController : MonoBehaviour
         if (colDetected > 0)
         {
             label.enabled = true;
-            label.text = "model:" + ic.cars[index].model + "power" + ic.cars[index].power + "price" + ic.cars[index].price + "traction" + ic.cars[index].traction;
+            label.text = "model: " + ic.cars[index].model +
+                         "\r\npower: " + ic.cars[index].power +
+                         "\r\nprice: " + ic.cars[index].price +
+                         "\r\ntraction: " + ic.cars[index].traction;
         }
         else
         {

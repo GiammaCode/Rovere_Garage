@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using TMPro;
 
@@ -9,6 +10,7 @@ public class CanvasController : MonoBehaviour
     const int ELEMENTS = 8;
     public GameObject[] cars = new GameObject[ELEMENTS];
     public GameObject[] infoColumns = new GameObject[ELEMENTS];
+    public Image background;
     public GameObject mainCar;
     public GameObject playerBody;
     public Canvas canvas;
@@ -36,11 +38,12 @@ public class CanvasController : MonoBehaviour
         labelInteractionCar.enabled = false;
         labelInfoCar.enabled = false;
         labelMainCar.enabled = false;
+        background.enabled = false;
         //Debug.Log(labelInteractionCar);
 
         labelInteractionCar.enabled = checkInteractionCar(playerBody, cars, carDistances);
 
-        setInfoLabel(labelInfoCar, playerBody, infoColumns, colDistances, ic);
+        setInfoLabel(labelInfoCar, playerBody, infoColumns, colDistances, ic, background);
         //labelInfoCar.enabled = checkInfoColumn(playerBody, infoColumns, colDistances);
 
         labelMainCar.enabled = checkMainCar(playerBody, mainCar, mainCarDistance);
@@ -73,7 +76,7 @@ public class CanvasController : MonoBehaviour
             return false;
         }
     }
-    public void setInfoLabel(TMP_Text label, GameObject pBody, GameObject[] columns, float[] dist, ItemContainer ic)
+    public void setInfoLabel(TMP_Text label, GameObject pBody, GameObject[] columns, float[] dist, ItemContainer ic, Image image)
     {
         int i = 0;
         int colDetected = 0;
@@ -90,6 +93,7 @@ public class CanvasController : MonoBehaviour
         }
         if (colDetected > 0)
         {
+            image.enabled = true;
             label.enabled = true;
             label.text = "model: " + ic.cars[index].model +
                          "\r\npower: " + ic.cars[index].power +
@@ -99,6 +103,7 @@ public class CanvasController : MonoBehaviour
         else
         {
             label.enabled = false;
+            image.enabled = false;
         }
     }
 

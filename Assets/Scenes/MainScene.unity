@@ -3826,6 +3826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wolf3D_readyplayerme_male_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45774aa5d717d94429fab07d33ba63d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1891638441363156276, guid: 45774aa5d717d94429fab07d33ba63d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.155
@@ -6279,7 +6283,7 @@ PrefabInstance:
     - target: {fileID: 2331468, guid: 19c15655c6ee95746b4d842244c9d27a, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: c932c83b86f3cff49acb3a8d75101c75, type: 2}
     - target: {fileID: 2331468, guid: 19c15655c6ee95746b4d842244c9d27a, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 

@@ -7,8 +7,8 @@ public class CameraController : MonoBehaviour
     const int ELEMENTS = 8;
     public GameObject CameraPlayer;  
     public GameObject player;
-    public float inputTimer;
-    public float time = 0.1f;
+    private float inputTimer;
+    private float time = 0.3f;
 
 
 

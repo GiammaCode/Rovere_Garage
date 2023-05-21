@@ -40,7 +40,7 @@ public class playerMovement : MonoBehaviour
         {
             characterController.Move(new Vector3(0, velocity, 0));
         }
-       if (x != 0 || y != 0)
+        if (x != 0 || y != 0)
         {
             footstepsSound.enabled = true;
         }

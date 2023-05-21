@@ -23,6 +23,6 @@ public class playerCameraMovement : MonoBehaviour
     {
         PlayerBody.transform.rotation = Quaternion.Euler(0, FPcamera.transform.rotation.eulerAngles.y, FPcamera.transform.rotation.eulerAngles.z);
         cameraBody.position = PlayerBody.position + new Vector3(x, y, z);
-
+       
     }
 }

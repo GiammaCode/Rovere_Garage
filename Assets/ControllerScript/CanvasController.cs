@@ -84,7 +84,7 @@ public class CanvasController : MonoBehaviour
         foreach (GameObject col in columns)
         {
             dist[i] = Vector3.Distance(pBody.transform.position, columns[i].transform.position);
-            if (dist[i] < 1 && (Input.GetKey("g") || Input.GetAxis("Fire1") == 1))
+            if (dist[i] < 2 && (Input.GetKey("g") || Input.GetAxis("Fire1") == 1))
             {
                 colDetected += 1;
                 index = i;

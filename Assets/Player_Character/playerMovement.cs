@@ -8,8 +8,7 @@ public class playerMovement : MonoBehaviour
     public CharacterController characterController;
     public AudioSource footstepsSound;
     public float speed = 2f;
-    public float gravity = -9.181f;
-    public float Gravity = 9.8f;
+    private float Gravity = 9.8f;
     private float velocity = 0;
 
     // Start is called before the first frame update
@@ -21,7 +20,9 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //joystick left input axis or arrow keyboard input
+        /*
+        * joystick left input axis or arrow keyboard input
+        */
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 

@@ -27,9 +27,8 @@ public class CanvasController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         ic = ItemContainer.Load("Cars");
-
     }
 
     // Update is called once per frame

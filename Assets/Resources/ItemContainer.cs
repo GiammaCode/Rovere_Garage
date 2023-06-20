@@ -13,9 +13,13 @@ public class ItemContainer {
 
     public List<Car> cars = new List<Car>();
     
+    /*
+    * get collection's path in input and return the
+    * value of XML deserialized
+    */
     public static ItemContainer Load(string path)
     {
-        //Resources è la cartella
+        //Resources is the name of directory
         TextAsset _xml = Resources.Load<TextAsset>(path);
         XmlSerializer serializer = new XmlSerializer(typeof(ItemContainer));
         StringReader reader = new StringReader(_xml.text);

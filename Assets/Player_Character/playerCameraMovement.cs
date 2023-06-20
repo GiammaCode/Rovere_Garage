@@ -11,14 +11,9 @@ public class playerCameraMovement : MonoBehaviour
     public float y;
     public float z;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    /*
+    * Update the position of player (camera an playerBody) 
+    */
     void Update()
     {
         PlayerBody.transform.rotation = Quaternion.Euler(0, FPcamera.transform.rotation.eulerAngles.y, FPcamera.transform.rotation.eulerAngles.z);

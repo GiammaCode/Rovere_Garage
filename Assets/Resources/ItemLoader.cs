@@ -12,20 +12,11 @@ public class ItemLoader : MonoBehaviour
     {
 
         ItemContainer ic = ItemContainer.Load(path);
-    
         for (int i=1; i<8; i++)
         {
             var car = ic.cars[i];
             print(car.model);
         }
-        /*foreach(Car car in ic.cars)
-        {
-            print(car.name);
-            print(car.model);
-            print(car.power);
-            print(car.price);
-            print(car.traction);
-        }*/
     }
 
 }
